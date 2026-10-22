@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary">
 <!-- Dados estruturados: ajudam o Google a entender o negócio -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"After Motion","description":"Equipe de edição de vídeo para Reels, TikTok, Shorts, YouTube, podcasts e thumbnails.","areaServed":"BR","serviceType":["Edição de vídeo","Edição de podcast","Criação de thumbnails"],"sameAs":["https://instagram.com/kyro.qy","https://instagram.com/kaevn.qy"],"telephone":"+5511976913546"}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"After Motion","description":"Equipe de edição de vídeo para Reels, TikTok, Shorts, YouTube, podcasts e thumbnails.","areaServed":"BR","serviceType":["Edição de vídeo","Edição de podcast","Criação de thumbnails"],"sameAs":["https://www.tiktok.com/@kyro.qy","https://www.tiktok.com/@kaevn.qy"],"telephone":"+5511976913546"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -176,7 +176,7 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--roxo)}
 <!-- PORTFÓLIO -->
 <section id="portfolio"><div class="wrap">
  <h2 class="rev">Portfólio</h2>
- <p class="sub rev">Alguns trabalhos recentes. Filtre por tipo de vídeo.</p>
+ <p class="sub rev">Referências públicas de cada formato. Estes vídeos não são trabalhos feitos pela After Motion.</p>
  <div class="filtros" id="filtros">
   <button class="on" data-f="todos">Todos</button><button data-f="curto">Curtos</button>
   <button data-f="longo">Longos</button><button data-f="youtube">YouTube</button>
@@ -211,11 +211,11 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--roxo)}
 
 <!-- DEPOIMENTOS -->
 <section id="depoimentos"><div class="wrap">
- <h2 class="rev">Quem já editou com a gente</h2><p class="sub rev">Depoimentos de exemplo: troque pelos reais.</p>
+ <h2 class="rev">Quem já editou com a gente</h2><p class="sub rev">Nomes e depoimentos fictícios, usados apenas como demonstração.</p>
  <div class="grade">
-  <div class="card dep rev"><q>Meus Reels passaram a ter o dobro de retenção. Entrega rápida e sem dor de cabeça.</q><b>Cliente 1</b><p>Criador de conteúdo</p></div>
-  <div class="card dep rev"><q>O pacote mensal resolveu meu calendário de posts. Vale cada centavo.</q><b>Cliente 2</b><p>Loja online</p></div>
-  <div class="card dep rev"><q>Cortes do podcast ficaram impecáveis e ainda fizeram as thumbnails.</q><b>Cliente 3</b><p>Podcaster</p></div>
+  <div class="card dep rev"><q>Os vídeos ficaram dinâmicos e as legendas deixaram tudo mais fácil de acompanhar.</q><b>Lucas Martins</b><p>Criador de conteúdo · exemplo fictício</p></div>
+  <div class="card dep rev"><q>A edição deixou os produtos mais interessantes e o vídeo ficou direto ao ponto.</q><b>Marina Costa</b><p>Loja online · exemplo fictício</p></div>
+  <div class="card dep rev"><q>Os cortes ficaram bem organizados, com ritmo bom e sem enrolação.</q><b>Pedro Almeida</b><p>Podcaster · exemplo fictício</p></div>
  </div>
 </div></section>
 
@@ -233,7 +233,7 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--roxo)}
 <!-- RODAPÉ -->
 <footer><div class="wrap rod">
  <div><div class="logo">After <span>Motion</span></div><p>Edição de vídeo para criadores e marcas.</p></div>
- <div><b>Editores</b><a href="https://instagram.com/kyro.qy" target="_blank" rel="noopener">@kyro.qy</a><a href="https://instagram.com/kaevn.qy" target="_blank" rel="noopener">@kaevn.qy</a></div>
+ <div><b>Editores</b><a href="https://www.tiktok.com/@kyro.qy" target="_blank" rel="noopener">@kyro.qy · TikTok</a><a href="https://www.tiktok.com/@kaevn.qy" target="_blank" rel="noopener">@kaevn.qy · TikTok</a></div>
  <div><b>Contato</b><a href="#" data-zap>WhatsApp</a><button data-tk-editor="@kyro.qy">TikTok @kyro.qy</button><button data-tk-editor="@kaevn.qy">TikTok @kaevn.qy</button><button data-copiar>Pix: copiar chave</button><button data-termos>Termos de serviço</button></div>
 </div></footer>
 
@@ -278,20 +278,16 @@ const SERVICOS = [
 ];
 
 const EDITORES = [
-  {id:"@kyro.qy", especialidade:"Vídeos curtos e motion", insta:"https://instagram.com/kyro.qy", zap:"5511976913546", tiktok:"https://www.tiktok.com/@kyro.qy"},
-  {id:"@kaevn.qy", especialidade:"YouTube e podcasts", insta:"https://instagram.com/kaevn.qy", zap:"5511933092410", tiktok:"https://www.tiktok.com/@kaevn.qy"}
+  {id:"@kyro.qy", especialidade:"Vídeos curtos e motion", zap:"5511976913546", tiktok:"https://www.tiktok.com/@kyro.qy"},
+  {id:"@kaevn.qy", especialidade:"YouTube e podcasts", zap:"5511933092410", tiktok:"https://www.tiktok.com/@kaevn.qy"}
 ];
 
 // Portfólio: tipo = curto | longo | youtube. Coloque o link real em "url".
 const PORTFOLIO = [
-  {t:"Reels de lifestyle", tipo:"curto", url:"", cor:"#7c3aed,#ec4899"},
-  {t:"TikTok de produto", tipo:"curto", url:"", cor:"#4f46e5,#06b6d4"},
-  {t:"Vlog de viagem", tipo:"youtube", url:"", cor:"#9333ea,#f97316"},
-  {t:"Documentário curto", tipo:"longo", url:"", cor:"#1e3a8a,#8b5cf6"},
-  {t:"Canal de games", tipo:"youtube", url:"", cor:"#be185d,#6d28d9"},
-  {t:"Shorts de humor", tipo:"curto", url:"", cor:"#0ea5e9,#8b5cf6"},
-  {t:"Entrevista completa", tipo:"longo", url:"", cor:"#6d28d9,#111827"},
-  {t:"Review tech", tipo:"youtube", url:"", cor:"#db2777,#4338ca"}
+  {t:"TikTok de produto", tipo:"curto", url:"https://www.tiktok.com/@clara.pcarvalho/video/7637680180395347207", cor:"#4f46e5,#06b6d4"},
+  {t:"Edit do Neymar", tipo:"curto", url:"https://www.tiktok.com/@jnz764/video/7604514101255097622", cor:"#7c3aed,#ec4899"},
+  {t:"Shorts de humor", tipo:"curto", url:"https://www.youtube.com/watch?v=WFbTtmOKyzo", cor:"#0ea5e9,#8b5cf6"},
+  {t:"Documentário curto", tipo:"longo", url:"https://www.youtube.com/watch?v=xttrkgKXtZ4", cor:"#1e3a8a,#8b5cf6"}
 ];
 
 /* ================= FUNÇÕES AUXILIARES ================= */
